@@ -1,0 +1,15 @@
+.RecipeApp {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  justify-items: center;
+  gap: 2rem;
+  padding-top: 5rem;
+}
+.RecipeApp_div {
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 3px 2px 1px rgba(0, 0, 0, 0.081);
+}
+ul li {
+  list-style: none;
+}
