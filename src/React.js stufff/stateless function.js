@@ -1,7 +1,16 @@
 import React from "react";
 import "./style.css";
 
-class Props extends React.Component {
+const ReturnMyLis = (props) => {
+  return (
+    <li>
+      <h1>instructor : {props.obj.instr} </h1>
+      <h2> Hobby : {props.obj.Hobby.map((val) => val + " ")} </h2>
+    </li>
+  );
+};
+
+class StateLessFun extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -48,16 +57,11 @@ class Props extends React.Component {
       <div>
         <ul className="grid">
           {this.state.instructor.map((obj, i) => {
-            return (
-              <li key={i}>
-                <h1>instructor : {obj.instr} </h1>
-                <h2> Hobby : {obj.Hobby.map((val) => val + " ")} </h2>
-              </li>
-            );
+            return <ReturnMyLis key={i} obj={obj} />;
           })}
         </ul>
       </div>
     );
   }
 }
-export default Props;
+export default StateLessFun;
