@@ -12,7 +12,7 @@ class Recipe extends Component {
     instr: PropTypes.string,
   };
   render() {
-    const { title, img, instr } = this.props;
+    const { title, img, instr, id } = this.props;
     const ingrediants = this.props.ingrediants.map((val, i) => (
       <li key={i}> {val}</li>
     ));
@@ -23,10 +23,20 @@ class Recipe extends Component {
         </div>
         <div>
           <h1>{title}</h1>
-          <h2>ingrediants </h2>
+          <h2>Hobbies </h2>
           <ul>{ingrediants}</ul>
-          <h2> Instructors </h2>
+          <h2> Owner name </h2>
           <p> {instr} </p>
+        </div>
+        <div>
+          <button
+            onClick={() => {
+              this.props.removeDogById(id);
+            }}
+          >
+            {" "}
+            REMOVE
+          </button>
         </div>
       </div>
     );

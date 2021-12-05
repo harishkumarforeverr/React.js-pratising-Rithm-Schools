@@ -1,1 +1,7 @@
-@import  './Scss/base/_colors';
+@import "./Scss/base/_colors";
+
+.grid {
+  @media only screen and (max-width: 37.5em) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

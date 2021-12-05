@@ -1,0 +1,22 @@
+.navbar {
+  display: grid;
+  justify-items: center;
+  margin: 3rem;
+}
+
+/* // form ki reated  */
+.form {
+  display: grid;
+  justify-items: center;
+}
+label {
+  font-size: 1.4rem;
+}
+input {
+  display: block;
+  margin-bottom: 1rem;
+}
+.formbtn {
+  margin-top: 2rem;
+  text-align: center;
+}
