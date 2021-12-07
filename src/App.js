@@ -11,12 +11,13 @@ import React from "react";
 // import Refs from "./React.js stufff/Refs";
 // import RecipeApp from "./RecipeApp/RecipeApp";
 // import MyRecipeApp from "./RecipeApp";
-import FindSameColorGame from "./FindSameColorGame/FindSameColorGame";
+// import FindSameColorGame from "./FindSameColorGame/FindSameColorGame";
+import LifeCycleMethod from "./lifeCycleMethod/lifeCycleMethod";
 import "./App.scss";
 const App = () => {
   return (
     <div>
-      <FindSameColorGame />
+      <LifeCycleMethod />
     </div>
   );
 };

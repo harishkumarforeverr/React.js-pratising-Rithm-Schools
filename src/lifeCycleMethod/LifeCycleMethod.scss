@@ -1,0 +1,34 @@
+.LifeCycleMethod {
+  // background-color: red;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  img {
+    width: 80%;
+    height: 30rem;
+  }
+  &__content {
+    &__countryName {
+      display: grid;
+      // grid-template-columns: repeat(3, 1fr);
+      text-align: left;
+      // background-color: red;
+
+      // justify-items: center;
+      // max-width: 0 auto;
+      & > div {
+        width: 60%;
+        margin: 0 auto;
+        // background-color: royalblue;
+      }
+      label {
+        font-size: 2rem;
+        font-weight: 600;
+        color: seagreen;
+        text-align: left;
+      }
+    }
+    &__flagImg {
+    }
+  }
+}
