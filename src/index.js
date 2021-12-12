@@ -3,10 +3,27 @@ import ReactDOM from "react-dom";
 import "./index.scss";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+import { render } from "react-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+const CompoenetA = () => {
+  return (
+    <div>
+      <h1>Im a Compoenent 111111111111</h1>
+    </div>
+  );
+};
 
+const CompoenetB = () => {
+  return (
+    <div>
+      <h1>Im a Compoenent 22222222222222</h1>
+    </div>
+  );
+};
 ReactDOM.render(
-  <App />,
-
+  <Router>
+    <App />
+  </Router>,
   document.getElementById("root")
 );
 
